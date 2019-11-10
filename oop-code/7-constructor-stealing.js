@@ -3,7 +3,7 @@
  * The idea is to call the supertype constructor from within the subtype constructor
  */
 function SuperType() {
-  this.colors = ['red', 'blue', 'green'];
+  this.colors = ["red", "blue", "green"];
 }
 
 function SubType() {
@@ -12,11 +12,11 @@ function SubType() {
 }
 
 var instance1 = new SubType();
-instance1.colors.push('blcak');
-console.log(instance1.colors);
+instance1.colors.push("blcak");
+console.log(instance1.colors); // [ 'red', 'blue', 'green', 'blcak' ]
 
 var instance2 = new SubType();
-console.log(instance2.colors);
+console.log(instance2.colors); // [ 'red', 'blue', 'green' ]
 
 /**
  * Another advantage of constructor stealing is its ability to pass arguments
@@ -27,13 +27,13 @@ function SuperPerson(name) {
 }
 
 function SubPerson() {
-  SuperPerson.call(this, 'Nicole');
+  SuperPerson.call(this, "Nicole"); // bind 'this' to current object - SubPerson
   this.age = 29;
 }
 
 var person = new SubPerson();
-console.log(person.name);
-console.log(person.age);
+console.log(person.name); // Nicole
+console.log(person.age); // 29
 
 /**
  * Combination inheritance：Combine prototype chaining and constructor stealing
@@ -42,12 +42,12 @@ console.log(person.age);
  */
 function SuperType(name) {
   this.name = name;
-  this.colors = ['red', 'blue', 'green'];
+  this.colors = ["red", "blue", "green"];
 }
 
 SuperType.prototype.sayName = function() {
-  console.log('Hello, ' + this.name);
-}
+  console.log("Hello, " + this.name);
+};
 
 function SubType(name, age) {
   // inherit properties
@@ -58,17 +58,17 @@ function SubType(name, age) {
 // inherit methods
 SubType.prototype = new SuperType();
 SubType.prototype.sayAge = function() {
-  console.log("I'm " + this.age + ' years old.');
+  console.log("I'm " + this.age + " years old.");
 };
 
 var instance1 = new SubType("Nicole", 29);
-instance1.colors.push('black');
-console.log(instance1.colors);  // 'red', 'blue', 'green', 'black
-instance1.sayName();  
+instance1.colors.push("black");
+console.log(instance1.colors); // 'red', 'blue', 'green', 'black
+instance1.sayName();
 instance1.sayAge();
 
-var instance2 = new SubType('Greg', 27);
-console.log(instance2.colors);  // 'red', 'blue', 'green'
+var instance2 = new SubType("Greg", 27);
+console.log(instance2.colors); // 'red', 'blue', 'green'
 instance2.sayName();
 instance2.sayAge();
 
