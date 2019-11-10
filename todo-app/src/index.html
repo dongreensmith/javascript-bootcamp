@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Todo App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">
+        Todo App
+      </h1>
+      <h2 class="header__subtitle">
+        What are you going to do?
+      </h2>
+    </div>
+  </header>
+
+  <!-- Actions panel -->
+  <div class="actions">
+    <div class="actions__container">
+      <input type="text" id="text-search" class="input" placeholder="Search task..." >
+      <label class="checkbox">
+        <input type="checkbox" id="ckbox-hide-complete">Hide Completed Tasks
+      </label>
+      <button id="button-search" class="button search">Search</button>
+    </div>
+  </div>
+  
+  <div class="container">
+    <!-- Form add new task-->
+    <h3 class="header__newtodo">Create a new task</h3>
+    <form id="form-new-todo">
+        <input 
+          type="text" 
+          name="todoText" 
+          id="text-new-todo" 
+          class="input" 
+          placeholder="Enter something to do">
+        <button id="btn-add-task" class="button">Create</button>
+      </form>
+    
+    <!-- Tasks List -->
+    <div id="tasks-list"></div>     
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Notes Taker - Take notes and never forget</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 id="title" class="header__title">NOTES TAKER</h1>
+      <h2 id="sub-title" class="header__subtitle">Take notes and never forget.</h2>
+    </div>    
+  </header>
+
+  <!-- Actions Bar -->
+  <div class="actions">
+    <div class="actions__container">
+      <input type="text" id="text-search" class="input" placeholder="Search...">
+      <select id="select-sort-by" class="dropdown">
+        <option value="byUpdatedAt">Sort by Last Updated</option>
+        <option value="byCreatedAt">Sort by Recently Created</option>
+        <option value="byTitle">Sorty by Title Alphabetically</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Notes List -->
+  <div class="container">
+    <div id="notes-list"></div>
+    <button id="btn-create-note" class="button">Create Note</button>
+  </div> 
+
+  <script src="js/index-bundle.js"></script>
+</body>
+</html>

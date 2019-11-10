@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #2B292E;
+  color: #fafafa;
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+div.main-container {
+  font-size: 1.6rem; 
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+div#word-to-guess span {
+  border-bottom: 1px solid #534f59;
+  display: inline-block;
+  font-size: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  margin: 0 8px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 2rem;
+}
+
+div.letters-container {
+  width: 50rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+div#letters span {
+  border: 1px solid #534f59;
+  display: inline-block;
+  font-size: 2rem;
+  height: 3.5rem;
+  line-height: 2;
+  width: 3.5rem;
+  margin: 0.5rem 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+div#letters span.guessed-letter {
+  background-image: url("../images/cross.png");
+  background-size: contain;
+}
+
+div#letters span:hover {
+  cursor: pointer;
+}
+
+div.puzzle-container {
+  display: flex;
+  margin-bottom: 4rem;  
+  align-items: center;
+  justify-content: center;
+}
+
+div.btn-container {
+  text-align: center;
+}
+
+.button {
+  background: #7044a0;
+  border: none;
+  border-bottom: 2px solid #603a88;
+  cursor: pointer;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: .8rem;
+  transition: background .3s ease, color .3s ease; 
+}
+
+.button:hover {
+  background: #5F3A87;
+}
+
+.error {
+  color: red;
+}
