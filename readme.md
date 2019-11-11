@@ -5,25 +5,25 @@
 Sample code and notes for learning Javascript important concepts: objects, functions, OOP etc. <br>
 Plus three real-world projects using Javascript(ES6, no framework) and modern building tools(Webpack, Babel etc.)
 
-### Contents
+## Contents
 
-#### async
+### async
 
 Sample code for learning and understanding asynchronous Javascript. [Readme](./async/readme.md)
 
-#### oop
+### oop
 
 Sample code for learning and understanding object oriented programming in Javascript. [Readme](./oop/readme.md)
 
-#### todo-app and todo-app-old
+### todo-app
 
 A todo web application to create, read, update and delete(CRUD) tasks [Readme](./todo-app/readme.md)
 
-#### notes-app and notes-app-old
+### notes-app
 
 A notes web application to create, read, update and delete(CRUD) notes. [Readme](./notes-app/readme.md)
 
-#### hangman-app and hangman-app-old
+#### hangman-app
 
 Hangman game web application. [Readme](./hangman-app/readme.md)
 
