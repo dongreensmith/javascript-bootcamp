@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Edit Note</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-  <link rel="icon" type="image/png" href="img/favicon.png">
-</head>
-<body>
-  <!-- Header -->
-  <div class="header">
-    <div class="container">
-      <h1 id="title" class="header__title">NOTES TAKER</h1>
-      <h2 id="sub-title" class="header__subtitle">Take notes and never forget.</h2>
-    </div>    
-  </div>
-
-  <!-- Actions Bar -->
-  <div class="actions">
-    <div class="actions__container actions__container--spaced">
-      <a href="/index.html">Home</a>
-      <span id="last-updated"></span>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Edit Note</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="container">
+        <h1 id="title" class="header__title">NOTES TAKER</h1>
+        <h2 id="sub-title" class="header__subtitle">
+          Take notes and never forget.
+        </h2>
+      </div>
     </div>
-  </div>
-  
-  <!-- Note editer -->
-  <div class="container">
-    <input id="input-title" placeholder="Enter your title" class="title-input">
-    <textarea id="input-content" placeholder="Enter your content" class="content-input" ></textarea>
-    <button id="btn-delete" class="button button--secondary">Delete</button>
-  </div>  
 
-  <script src="js/moment.js"></script>
-  <script src="js/notes-functions.js"></script>
-  <script src="js/edit-note.js"></script>
-</body>
+    <!-- Actions Bar -->
+    <div class="actions">
+      <div class="actions__container actions__container--spaced">
+        <a href="./index.html">Home</a>
+        <span id="last-updated"></span>
+      </div>
+    </div>
+
+    <!-- Note editer -->
+    <div class="container">
+      <input
+        id="input-title"
+        placeholder="Enter your title"
+        class="title-input"
+      />
+      <textarea
+        id="input-content"
+        placeholder="Enter your content"
+        class="content-input"
+      ></textarea>
+      <button id="btn-delete" class="button button--secondary">Delete</button>
+    </div>
+
+    <script src="js/moment.js"></script>
+    <script src="js/notes-functions.js"></script>
+    <script src="js/edit-note.js"></script>
+  </body>
 </html>

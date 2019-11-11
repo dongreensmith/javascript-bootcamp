@@ -23,7 +23,7 @@ A todo web application to create, read, update and delete(CRUD) tasks [Readme](.
 
 A notes web application to create, read, update and delete(CRUD) notes. [Readme](./notes-app/readme.md)
 
-### hangman-app and hangman-app-old
+#### hangman-app and hangman-app-old
 
 Hangman game web application. [Readme](./hangman-app/readme.md)
 

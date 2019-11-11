@@ -20,7 +20,7 @@ document.querySelector('#btn-create-note').addEventListener('click', (e) => {
   });
   localStorage.setItem('notes', JSON.stringify(notes));
   // renderNotes(notes, filters);
-  location.assign(`/edit-note.html#${id}`);
+  location.assign(`./edit-note.html#${id}`);
 });
 
 // Search notes by title
